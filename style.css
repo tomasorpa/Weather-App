@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --backgroundColor: #43aefc;
+  --shadow:none;
+}
+body {
+
+  font-family: "Roboto", sans-serif;
+  background-color: #43aefc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contenedor {
+  width: 60vw;
+  height: 40vh;
+  padding: 10px 0;
+  background-color: #ffffff;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+.contenedor div {
+  height: 80%;
+  margin: 0 auto;
+
+  padding: 10px 20px;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  justify-content: space-evenly;
+}
+
+input[type="text"] {
+  padding: 17px;
+  font-size: 20px;
+  border-radius: 5px;
+  height: 45px;
+}
+
+button {
+  height: 45px;
+  border-radius: 5px;
+  padding: 13px;
+  font-size: 16px;
+  background-color: #43aefc;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#datosClima {
+ 
+  font-size: 18px;
+  background-color: var(--backgroundColor);
+  width: 40vw;
+  height: 50vh;
+  border-radius: 5px;
+  box-shadow:var(--shadow);
+
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#dataInfo{
+display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+width: 100%;
+
+  height: 100%;
+
+  border-radius: 5px;
+
+}
+#datosClima img {
+  max-width: 80px;
+  max-height: 80px;
+}
+h1,
+#weatherApp {
+  color: rgb(68, 68, 68);
+    
+  padding: 5px 20px ;
+  font-size: 25px;
+}
+#weatherApp {
+  width: 100%;
+  border-bottom: 1px #333333 solid;
+}
+#moreInfo{
+display: flex;
+
+width: 100%;
+
+justify-content: space-between;  
+
+}
+#moreInfo div{
+  width: 50%;
+  text-align: center;
+
+}
+
+@media (max-width: 556px) {
+
+    #weatherApp,h2{
+    font-size:18px ;
+    color: rgb(68, 68, 68);  }
+      
+    
+        #moreInfo div p {
+          font-size: 13px;
+    
+        }
+}
+
+
+@media (max-width: 464px){
+  #datosClima{
+    width: 70%;
+    
+  }
+#weatherApp,
+  h2,h1 {
+    font-size: 15px;
+    
+  }
+#dataInfo p{
+  font-size: 12px;
+}
+
+  #moreInfo div p {
+    font-size: 11px;
+
+  }
+}
